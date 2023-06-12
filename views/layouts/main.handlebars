@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fund My Project!</title>
-    <link rel="stylesheet" href="/css/jass.css">
-    <link rel="stylesheet" href="/css/style.css">
+    {{!-- <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="/css/style.css"> --}}
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 
                 <!-- Conditionally render login or logout links -->
                 {{#if logged_in}}
-                <button class="no-button" id="logout">Logout</button>
+                <button class="no-button" id="logout">logout</button>
                 {{else}}
                 <a href="/login">Login</a>
                 {{/if}}
