@@ -5,9 +5,18 @@
         <h4>{{content}}</h4>
     </div>
 
+    {{#if logged_in}}
     <div>
         <button id="add-comment">Add Comment</button>
     </div>
+
+    {{else}}
+    <div>
+        <button onclick="window.location.href='/login'">Add Comment</button>
+    </div>
+    {{/if}}
+
+
 
     <div>
         <form style="display: none" id="comment-form">
@@ -32,4 +41,3 @@
 </div>
 
 <script src="/js/comment.js"></script>
-
