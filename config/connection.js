@@ -1,8 +1,10 @@
+// connection to the database using Sequelize and the .env file to hide sensitive data
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
 let sequelize;
 
+// use JawsDB for Heroku deployment or local MySQL database for local deployment
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {

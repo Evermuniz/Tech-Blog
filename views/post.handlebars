@@ -1,3 +1,5 @@
+{{!-- template to render individual posts with associated comments and the option leave a comment for logged in users --}}
+
 <div data-id="{{this.id}}">
 
     <hgroup>
@@ -40,7 +42,7 @@
         {{#each comments}}
         <blockquote>{{this.content}}
             <footer>
-                <cite>{{user.name}} commented on {{format_date this.date_created}}:</cite>
+                <cite>{{user.name}} commented on {{format_date this.date_created}}</cite>
             </footer>
         </blockquote>
         {{/each}}

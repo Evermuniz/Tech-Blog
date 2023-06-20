@@ -1,3 +1,5 @@
+// Setting the router to use express and homeroutes and apiroutes to use respective routes
+
 const router = require('express').Router();
 
 const apiRoutes = require('./api');

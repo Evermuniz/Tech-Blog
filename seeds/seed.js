@@ -1,3 +1,6 @@
+// importing the seed data from the json files
+//seeding the database with the seed data for testing
+
 const sequelize = require('../config/connection');
 const { Comments, Post, User } = require('../models');
 

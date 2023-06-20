@@ -1,3 +1,5 @@
+// javascript code to handle creating a new post
+
 const hideButtons = async (event) => {
   event.preventDefault();
 

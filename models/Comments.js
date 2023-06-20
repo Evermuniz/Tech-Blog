@@ -1,3 +1,5 @@
+// Use sequelize to create the model for the Comments table in the database, and export it
+
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 

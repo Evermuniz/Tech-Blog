@@ -1,3 +1,5 @@
+// using sequelize to create a new model for the Post table in the database, and export it
+
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 

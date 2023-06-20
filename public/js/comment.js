@@ -1,3 +1,5 @@
+// javasctipt code to handle comment form and post it to the database
+
 const commentBox = async (event) => {
   event.preventDefault();
 

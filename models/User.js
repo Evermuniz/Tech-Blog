@@ -1,3 +1,5 @@
+// using sequelize to create a new model for the User table in the database, and export it
+
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
@@ -36,6 +38,7 @@ User.init(
       },
     },
   },
+  // hook to hash password before creating or updating a user
   {
     hooks: {
       beforeCreate: async (newUserData) => {

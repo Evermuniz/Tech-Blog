@@ -1,3 +1,6 @@
+// server side code 
+// Code soure from the UofU Coding Bootcamp with minor modifications
+
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -11,13 +14,13 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 
 const sess = {
   secret: 'Super secret secret',
   cookie: {
     maxAge: 6000000,
+    // rolling resets the expiration based on user activity
     rolling: true,
     httpOnly: true,
     secure: false,
@@ -32,7 +35,6 @@ const sess = {
 
 app.use(session(sess));
 
-// Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 

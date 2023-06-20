@@ -1,3 +1,5 @@
+//Handles all the GET routes for the homepage, dashboard, and login pages and render to the respective handlebars templates
+
 const router = require('express').Router();
 const { Post, User, Comments } = require('../models');
 const withAuth = require('../utils/auth');

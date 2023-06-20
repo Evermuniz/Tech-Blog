@@ -1,3 +1,5 @@
+// Defining the API routes and exporting them for use in the application
+
 const router = require('express').Router();
 const userRoutes = require('./userRoutes');
 const postRoutes = require('./postRoutes');

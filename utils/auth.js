@@ -1,5 +1,8 @@
+// Middleware to check if user is logged in
+// redirect to login page if not logged in
+// Code source from the UofU Coding Bootcamp
+
 const withAuth = (req, res, next) => {
-  // If the user is not logged in, redirect the request to the login route
   if (!req.session.logged_in) {
     res.redirect('/login');
   } else {

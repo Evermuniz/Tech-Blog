@@ -1,6 +1,8 @@
+// Helps format dates
+// Code source from the UofU Coding Bootcamp
+
 module.exports = {
   format_date: (date) => {
-    // Format date as MM/DD/YYYY
     return date.toLocaleDateString();
   },
 };

@@ -1,3 +1,6 @@
+// javascript code to handle updates to an existing post or delete it
+// the request is sent to the server and the server updates the database
+
 const updatePost = async (event) => {
   event.preventDefault();
 
@@ -37,6 +40,7 @@ const delButtonHandler = async (event) => {
   }
 ;
 
+// hide the update and delete buttons and show the update form for usability
 const hideButtons = async (event) => {
   event.preventDefault();
 

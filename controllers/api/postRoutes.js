@@ -1,3 +1,5 @@
+// API routes to create, delete, and update posts and comments
+
 const router = require('express').Router();
 const { Post, Comments } = require('../../models');
 const withAuth = require('../../utils/auth');

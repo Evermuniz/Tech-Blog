@@ -1,3 +1,6 @@
+// javascript code to handle logout
+// code source is from the UofU Coding Bootcamp with minor modifications
+
 const logout = async () => {
   const response = await fetch('/api/users/logout', {
     method: 'POST',

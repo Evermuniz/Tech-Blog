@@ -1,3 +1,5 @@
+//Handles all user login, logout and signup routes
+
 const router = require('express').Router();
 const { User } = require('../../models');
 

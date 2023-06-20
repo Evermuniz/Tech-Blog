@@ -1,3 +1,7 @@
+// setting up associations between models
+// user has many posts and many comments
+// post has many comments
+
 const User = require('./User');
 const Post = require('./Post');
 const Comments = require('./Comments');
