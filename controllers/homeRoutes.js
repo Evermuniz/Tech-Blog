@@ -68,9 +68,8 @@ router.get('/myposts/:id', async (req, res) => {
 router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
-      include: [{ model: Comments, include: { model: User, attributes: ['name'] }}],
+      include: [{ model: Comments}, { model: User, attributes: ['name'] }],
     });
-    console.log(postData);
 
     const post = postData.get({ plain: true });
     console.log(post);
@@ -78,6 +77,7 @@ router.get('/post/:id', async (req, res) => {
     res.render('post', {
       ...post,
       ...Comments,
+      post: [post],
       logged_in: req.session.logged_in,
     });
   } catch (err) {
