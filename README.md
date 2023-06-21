@@ -14,7 +14,9 @@ This application is my first full stack development project. The Tech Blog is wh
 
 
 ## Usage
-When first visiting the site, you will see existing posts and a few options along the navigation bar. Anybody is able to view individual posts along with their comments but you must be logged in to submit a comment. You must also be logged in to publish, edit, or delete a post of your own. Simply login or sign up to access all the functionality. [![Screenshot of the application](./Assets/screenshot.jpeg)](https://muniz-tech-blog-62e3233fa5a7.herokuapp.com/) 
+When first visiting the site, you will see existing posts and a few options along the navigation bar. Anybody is able to view individual posts along with their comments but you must be logged in to submit a comment. You must also be logged in to publish, edit, or delete a post of your own. Simply login or sign up to access all the functionality. Click on the image below to visit the deployed application. 
+
+[![Screenshot of the application](./Assets/screenshot.jpeg)](https://muniz-tech-blog-62e3233fa5a7.herokuapp.com/) 
 
 ## Credits
 - bcrypt
